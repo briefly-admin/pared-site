@@ -27,7 +27,7 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
         setStatus('error')
       }
     } catch {
-      // If API route doesn't exist yet, just show success for demo
+      // If API route doesn't exist yet, show success for demo
       setStatus('success')
       setEmail('')
     }
@@ -35,40 +35,55 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
 
   return (
     <div className="email-section">
-      <FadeIn>
-        <h2>{heading}</h2>
-        <p>{subtext}</p>
-        <form className="email-form" onSubmit={handleSubmit}>
-          {status === 'success' ? (
-            <p style={{ color: 'var(--pared-accent)', fontSize: '0.9rem' }}>
-              Welcome to Pared. We'll be in touch.
+      {/* Berthe Morisot — Young Woman Knitting, 1883. The Met, CC0 */}
+      <div className="email-section-bg">
+        <img
+          src="/art/morisot-knitting.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+
+      <div className="email-section-content">
+        <FadeIn>
+          <h2>{heading}</h2>
+          <p>{subtext}</p>
+          <form className="email-form" onSubmit={handleSubmit}>
+            {status === 'success' ? (
+              <p style={{ color: 'var(--pared-accent)', fontSize: '0.9rem' }}>
+                Welcome to Pared. We'll be in touch.
+              </p>
+            ) : (
+              <>
+                <input
+                  type="email"
+                  className="email-input"
+                  placeholder="Your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="email-submit"
+                  disabled={status === 'loading'}
+                >
+                  {status === 'loading' ? '...' : 'Subscribe'}
+                </button>
+              </>
+            )}
+          </form>
+          {status === 'error' && (
+            <p style={{ color: 'var(--pared-accent)', fontSize: '0.8rem', marginTop: '1rem', opacity: 0.8 }}>
+              Something went wrong. Please try again.
             </p>
-          ) : (
-            <>
-              <input
-                type="email"
-                className="email-input"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button
-                type="submit"
-                className="email-submit"
-                disabled={status === 'loading'}
-              >
-                {status === 'loading' ? '...' : 'Subscribe'}
-              </button>
-            </>
           )}
-        </form>
-        {status === 'error' && (
-          <p style={{ color: '#C4836A', fontSize: '0.8rem', marginTop: '1rem', opacity: 0.8 }}>
-            Something went wrong. Please try again.
-          </p>
-        )}
-      </FadeIn>
+        </FadeIn>
+      </div>
+
+      <div className="email-art-credit">
+        Berthe Morisot, Young Woman Knitting, 1883 · The Met, CC0
+      </div>
     </div>
   )
 }
