@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;display=swap');
+  </style>
+  <rect width="400" height="120" fill="#F7F3EE"/>
+  <text x="200" y="72" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="52" font-weight="300" letter-spacing="12" fill="#2C2420">PARED</text>
+  <line x1="80" y1="90" x2="320" y2="90" stroke="#C4836A" stroke-width="0.75"/>
+  <text x="200" y="108" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="10" letter-spacing="4" fill="#9B9188" font-style="italic">PARED BACK TO WHAT MATTERS</text>
+</svg>

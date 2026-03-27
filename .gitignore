@@ -1,0 +1,17 @@
+# Node deps and build artifacts
+node_modules/
+.next/
+dist/
+.out/
+build/
+
+# Local env / secrets
+.env
+.env.local
+.env.*.local
+
+# Lockfiles you don't want (keep pnpm-lock if you use pnpm)
+.DS_Store
+.vscode/
+.vitest/
+coverage/
