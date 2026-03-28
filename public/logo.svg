@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;display=swap');
-  </style>
-  <rect width="400" height="120" fill="#F7F3EE"/>
-  <text x="200" y="72" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="52" font-weight="300" letter-spacing="12" fill="#2C2420">PARED</text>
-  <line x1="80" y1="90" x2="320" y2="90" stroke="#C4836A" stroke-width="0.75"/>
-  <text x="200" y="108" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="10" letter-spacing="4" fill="#9B9188" font-style="italic">PARED BACK TO WHAT MATTERS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="520" height="130">
+  <rect width="520" height="130" fill="#0C1510"/>
+  <text x="260" y="62" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="50" font-weight="300" letter-spacing="16" fill="#EDE8DE">VALLEY</text>
+  <rect x="170" y="78" width="180" height="0.6" fill="#4A6E58"/>
+  <text x="260" y="98" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="12" letter-spacing="5" fill="#7A9E86" font-style="italic">of the Lilies</text>
+  <text x="260" y="118" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="9" letter-spacing="3.5" fill="#6A8272">THE EVERYDAY, MADE RIGHT.</text>
 </svg>

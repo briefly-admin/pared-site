@@ -8,14 +8,14 @@ module.exports = {
     extend: {
       colors: {
         pared: {
-          bg: '#F7F3EE',
-          text: '#2C2420',
-          accent: '#C4836A',
-          sage: '#8B9E7E',
-          subtle: '#E8E0D6',
-          cream: '#FAF8F5',
-          muted: '#9B9188',
-          dark: '#1A1614',
+          bg: '#F3F6FB',
+          text: '#222838',
+          accent: '#C4A0BA',
+          sage: '#72ADA0',
+          subtle: '#D8E0EE',
+          cream: '#F9FBFE',
+          muted: '#8494AB',
+          dark: '#181C2C',
         }
       },
       fontFamily: {

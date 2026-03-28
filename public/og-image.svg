@@ -1,7 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <rect width="1200" height="630" fill="#F7F3EE"/>
-  <text x="600" y="280" text-anchor="middle" font-family="Georgia, 'Cormorant Garamond', serif" font-size="72" font-weight="300" letter-spacing="16" fill="#2C2420">PARED</text>
-  <line x1="440" y1="310" x2="760" y2="310" stroke="#C4836A" stroke-width="1"/>
-  <text x="600" y="360" text-anchor="middle" font-family="Georgia, 'Cormorant Garamond', serif" font-size="18" letter-spacing="4" fill="#9B9188" font-style="italic">QUALITY GOODS FOR HER — NATURAL MATERIALS — MADE IN USA</text>
-  <text x="600" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="3" fill="#C4836A">PARED.SHOP</text>
+  <rect width="1200" height="630" fill="#0C1510"/>
+  <rect x="0" y="0" width="4" height="630" fill="#2E4D3A"/>
+  <rect x="1196" y="0" width="4" height="630" fill="#2E4D3A"/>
+  <text x="600" y="262" text-anchor="middle" font-family="Georgia, serif" font-size="82" font-weight="300" letter-spacing="20" fill="#EDE8DE">VALLEY</text>
+  <rect x="420" y="292" width="360" height="0.8" fill="#4A6E58"/>
+  <text x="600" y="326" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="6" fill="#7A9E86" font-style="italic">of the Lilies</text>
+  <text x="600" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="#6A8272">The everyday, made right.</text>
+  <text x="600" y="428" text-anchor="middle" font-family="Georgia, serif" font-size="12" letter-spacing="3" fill="#C09060">VALLEYOFTHELILIES.COM</text>
 </svg>

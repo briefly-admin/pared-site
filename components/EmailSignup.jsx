@@ -3,23 +3,20 @@
 import { useState } from 'react'
 import FadeIn from './FadeIn'
 
-export default function EmailSignup({ heading = "Pared back to what matters", subtext = "Subscribe for curated emails featuring quality, non-toxic products from brands we trust." }) {
+export default function EmailSignup({ heading = "Your inbox, made right.", subtext = "Real finds, real materials, real makers. No synthetics in the products or the editorial." }) {
   const [email, setEmail] = useState('')
-  const [status, setStatus] = useState('idle') // idle | loading | success | error
+  const [status, setStatus] = useState('idle')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!email) return
-
     setStatus('loading')
-
     try {
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
       })
-
       if (res.ok) {
         setStatus('success')
         setEmail('')
@@ -27,7 +24,6 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
         setStatus('error')
       }
     } catch {
-      // If API route doesn't exist yet, show success for demo
       setStatus('success')
       setEmail('')
     }
@@ -37,11 +33,7 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
     <div className="email-section">
       {/* Berthe Morisot — Young Woman Knitting, 1883. The Met, CC0 */}
       <div className="email-section-bg">
-        <img
-          src="/art/morisot-knitting.jpg"
-          alt=""
-          aria-hidden="true"
-        />
+        <img src="/art/morisot-knitting.jpg" alt="" aria-hidden="true" />
       </div>
 
       <div className="email-section-content">
@@ -50,8 +42,8 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
           <p>{subtext}</p>
           <form className="email-form" onSubmit={handleSubmit}>
             {status === 'success' ? (
-              <p style={{ color: 'var(--pared-accent)', fontSize: '0.9rem' }}>
-                Welcome to Pared. We'll be in touch.
+              <p style={{ color: 'var(--votl-accent)', fontSize: '0.9rem' }}>
+                Welcome to Valley of the Lilies. We'll be in touch.
               </p>
             ) : (
               <>
@@ -63,18 +55,14 @@ export default function EmailSignup({ heading = "Pared back to what matters", su
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
-                <button
-                  type="submit"
-                  className="email-submit"
-                  disabled={status === 'loading'}
-                >
+                <button type="submit" className="email-submit" disabled={status === 'loading'}>
                   {status === 'loading' ? '...' : 'Subscribe'}
                 </button>
               </>
             )}
           </form>
           {status === 'error' && (
-            <p style={{ color: 'var(--pared-accent)', fontSize: '0.8rem', marginTop: '1rem', opacity: 0.8 }}>
+            <p style={{ color: 'var(--votl-accent)', fontSize: '0.8rem', marginTop: '1rem', opacity: 0.8 }}>
               Something went wrong. Please try again.
             </p>
           )}

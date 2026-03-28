@@ -4,8 +4,8 @@ import EmailSignup from '../../components/EmailSignup'
 import Footer from '../../components/Footer'
 
 export const metadata = {
-  title: 'About | PARED',
-  description: 'PARED is a curated collection of quality, non-toxic goods for women, made from natural materials in the USA. Pared back to what matters.',
+  title: 'Our Story | Valley of the Lilies',
+  description: 'Valley of the Lilies was built on one conviction: the things you reach for every day should be made right. Real materials, no compromise.',
 }
 
 export default function AboutPage() {
@@ -31,33 +31,35 @@ export default function AboutPage() {
             fontSize: '0.68rem',
             letterSpacing: '0.25em',
             textTransform: 'uppercase',
-            color: 'var(--pared-accent)',
+            color: 'var(--votl-forest)',
             marginBottom: '1.5rem',
             fontWeight: 500,
           }}>
-            About Us
+            Our Story
           </div>
-          <h2>We've become numb to the noise of low-quality, uninspired products.</h2>
+          <h2>The things you reach for every day should be worth reaching for.</h2>
         </FadeIn>
         <FadeIn delay={200}>
           <p style={{ marginTop: '2rem' }}>
-            I started Pared to give conscious women a guide to finding quality, life-tested,
-            non-toxic products made with intention. Every item featured contains{' '}
-            <em>zero plastic or synthetic materials</em>, and we prioritize products made in the USA.
+            Most goods weren't made to last. They were made to sell — and designed to go
+            unquestioned. Plastic packaging, synthetic fillers, offshore labor, ingredient lists
+            written to confuse. We decided to refuse all of it.
           </p>
           <p>
-            This isn't an exhaustive list. These are products I've tried, my friends have tried,
-            or things I've researched extensively. Most come from brands with many items meeting
-            our criteria, so I encourage you to explore them fully.
+            Valley of the Lilies is a curated edit of everyday goods made from{' '}
+            <em>real materials, by real makers</em>, without toxic shortcuts. Everything here
+            has earned its place — through what it's made of, where it comes from, and how long
+            it will last.
           </p>
           <p>
-            <em>Pared back to what matters.</em> That's the whole philosophy. Strip away the
-            synthetic, the harmful, the disposable — and what you're left with is quality that lasts.
+            This isn't about perfection or purity. It's about raising the floor on what you
+            accept into your daily rituals. Your skin, your home, your table — none of it
+            should come with a warning label.
           </p>
           <p>
-            If you have questions, product recommendations, or just want to chat — reach out at{' '}
-            <a href="mailto:hello@pared.shop" style={{ color: 'var(--pared-accent)', borderBottom: '1px solid rgba(196,131,106,0.4)' }}>
-              hello@pared.shop
+            Questions, recommendations, or just want to say hello —{' '}
+            <a href="mailto:hello@valleyofthelilies.com" style={{ color: 'var(--votl-accent)', borderBottom: '1px solid rgba(196,131,106,0.4)' }}>
+              hello@valleyofthelilies.com
             </a>
           </p>
         </FadeIn>
@@ -66,21 +68,21 @@ export default function AboutPage() {
       <FadeIn>
         <div className="values-grid">
           <div className="value-item">
-            <h3>Natural</h3>
-            <p>Zero plastic. Zero synthetics. Only products made from materials the earth intended.</p>
+            <h3>Against the synthetic</h3>
+            <p>Nothing plastic. Nothing that off-gases. Nothing you can't pronounce on an ingredient list. Real materials only.</p>
           </div>
           <div className="value-item">
-            <h3>Non-Toxic</h3>
-            <p>Free from harmful chemicals, endocrine disruptors, and ingredients you can't pronounce.</p>
+            <h3>For the ritual</h3>
+            <p>Everything you reach for daily should be worth the gesture. The right object, made right, changes how a day feels.</p>
           </div>
           <div className="value-item">
-            <h3>American</h3>
-            <p>Made in the USA, or at minimum from American companies with transparent practices.</p>
+            <h3>Made to last</h3>
+            <p>American craftsmanship and honest materials. We prefer things that get better with age over things built to be replaced.</p>
           </div>
         </div>
       </FadeIn>
 
-      <EmailSignup heading="Come along for the ride" />
+      <EmailSignup heading="Your finds, delivered." subtext="Real finds, real materials, real makers. No synthetics in the products or the editorial." />
       <Footer />
     </>
   )

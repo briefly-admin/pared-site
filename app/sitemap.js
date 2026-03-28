@@ -1,7 +1,7 @@
 import productsData from '../data/products.json'
 
 export default function sitemap() {
-  const baseUrl = 'https://pared.shop'
+  const baseUrl = 'https://valleyofthelilies.com'
 
   const productUrls = productsData.products.map((p) => ({
     url: `${baseUrl}/products/${p.slug}`,

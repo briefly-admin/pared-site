@@ -6,20 +6,21 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-editorial">
         <FadeIn>
-          <div className="hero-overline">A curated collection for her</div>
+          <div className="hero-overline">Valley of the Lilies</div>
         </FadeIn>
         <FadeIn delay={150}>
-          <h1>Quality goods made from <em>natural materials</em> in the USA</h1>
+          <h1>The everyday,<br /><em>made right.</em></h1>
         </FadeIn>
         <FadeIn delay={300}>
           <p className="hero-sub">
-            Pared is a curated collection of non-toxic, plastic-free products for women who care
-            about what they put on their bodies and in their homes.
+            Everything you reach for — your skin, your home, your table —
+            should be made from real materials by people who care.
+            We find them so you never have to compromise.
           </p>
         </FadeIn>
         <FadeIn delay={450}>
           <div className="hero-cta">
-            <Link href="/collection" className="btn-primary">Browse Collection</Link>
+            <Link href="/collection" className="btn-primary">Shop</Link>
             <Link href="/about" className="btn-ghost">Our Story</Link>
           </div>
         </FadeIn>

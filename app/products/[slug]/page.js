@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   const product = productsData.products.find((p) => p.slug === params.slug)
   if (!product) return {}
   return {
-    title: `${product.name} by ${product.brand} | PARED`,
+    title: `${product.name} by ${product.brand} | Valley of the Lilies`,
     description: product.description,
   }
 }
@@ -89,7 +89,7 @@ export default function ProductPage({ params }) {
               </div>
 
               <p className="product-detail-note" style={{ marginTop: '1.5rem' }}>
-                <strong>Affiliate note:</strong> PARED may earn a commission if you purchase through our link, at no extra cost to you.{' '}
+                <strong>Affiliate note:</strong> Valley of the Lilies may earn a commission if you purchase through our link, at no extra cost to you.{' '}
                 <Link href="/disclaimer">Full disclosure.</Link>
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function ProductPage({ params }) {
               fontSize: '0.65rem',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
-              color: 'var(--pared-muted)',
+              color: 'var(--votl-muted)',
               marginBottom: '2rem',
               fontWeight: 500,
             }}>
@@ -119,7 +119,7 @@ export default function ProductPage({ params }) {
             }}>
               {related.map((p) => (
                 <Link key={p.id} href={`/products/${p.slug}`} style={{
-                  background: 'var(--pared-bg)',
+                  background: 'var(--votl-bg)',
                   display: 'block',
                   transition: 'background 0.3s',
                 }}>
@@ -130,8 +130,8 @@ export default function ProductPage({ params }) {
                     loading="lazy"
                   />
                   <div style={{ padding: '1rem 1.25rem 1.5rem' }}>
-                    <div style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--pared-muted)', marginBottom: '0.35rem' }}>{p.brand}</div>
-                    <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '1.1rem', color: 'var(--pared-text)', marginBottom: '0.35rem' }}>{p.name}</div>
+                    <div style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--votl-muted)', marginBottom: '0.35rem' }}>{p.brand}</div>
+                    <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '1.1rem', color: 'var(--votl-text)', marginBottom: '0.35rem' }}>{p.name}</div>
                     <div style={{ fontSize: '0.88rem', fontWeight: 500 }}>${p.price}</div>
                   </div>
                 </Link>

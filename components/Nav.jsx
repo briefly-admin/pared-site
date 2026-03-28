@@ -15,11 +15,14 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
-      <Link href="/" className="nav-logo">PARED</Link>
+      <Link href="/" className="nav-logo">
+        <span className="nav-logo-main">Valley</span>
+        <span className="nav-logo-sub">of the Lilies</span>
+      </Link>
       <ul className="nav-links">
-        <li><Link href="/">Discover</Link></li>
-        <li><Link href="/collection">Browse</Link></li>
-        <li><Link href="/about">About</Link></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/collection">Shop</Link></li>
+        <li><Link href="/about">Our Story</Link></li>
       </ul>
       <button
         className="nav-mobile-btn"
@@ -35,29 +38,17 @@ export default function Nav() {
           top: '60px',
           left: 0,
           right: 0,
-          background: 'var(--pared-bg)',
+          background: 'var(--votl-bg)',
           padding: '2rem',
-          borderBottom: '1px solid var(--pared-subtle)',
+          borderBottom: '1px solid var(--votl-subtle)',
           display: 'flex',
           flexDirection: 'column',
           gap: '1.5rem',
           zIndex: 99,
         }}>
-          <Link
-            href="/"
-            onClick={() => setMobileOpen(false)}
-            style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--pared-muted)' }}
-          >Discover</Link>
-          <Link
-            href="/collection"
-            onClick={() => setMobileOpen(false)}
-            style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--pared-muted)' }}
-          >Browse</Link>
-          <Link
-            href="/about"
-            onClick={() => setMobileOpen(false)}
-            style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--pared-muted)' }}
-          >About</Link>
+          <Link href="/" onClick={() => setMobileOpen(false)} style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--votl-muted)' }}>Home</Link>
+          <Link href="/collection" onClick={() => setMobileOpen(false)} style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--votl-muted)' }}>Shop</Link>
+          <Link href="/about" onClick={() => setMobileOpen(false)} style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--votl-muted)' }}>Our Story</Link>
         </div>
       )}
     </nav>

@@ -1,23 +1,23 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'PARED | Quality Goods for Her',
-  description: 'A curated collection of non-toxic, plastic-free goods for women, made from natural materials in the USA. Pared back to what matters.',
-  keywords: ['non-toxic', 'natural materials', 'made in USA', 'women', 'organic', 'plastic-free', 'curated', 'quality goods'],
+  title: 'Valley of the Lilies — The everyday, made right.',
+  description: 'Real materials. Non-toxic formulas. Made in America. Valley of the Lilies finds the goods worth reaching for every day — and refuses everything else.',
+  keywords: ['non-toxic', 'natural materials', 'made in USA', 'women', 'organic', 'plastic-free', 'real materials', 'everyday goods'],
   openGraph: {
-    title: 'PARED | Quality Goods for Her',
-    description: 'A curated collection of non-toxic, plastic-free goods for women, made from natural materials in the USA.',
-    url: 'https://pared.shop',
-    siteName: 'PARED',
+    title: 'Valley of the Lilies — The everyday, made right.',
+    description: 'Real materials. Non-toxic formulas. Made in America. The goods worth reaching for every day.',
+    url: 'https://valleyofthelilies.com',
+    siteName: 'Valley of the Lilies',
     images: [{ url: '/og-image.svg', width: 1200, height: 630 }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PARED | Quality Goods for Her',
-    description: 'A curated collection of non-toxic, plastic-free goods for women, made from natural materials in the USA.',
-    creator: '@paredshop',
+    title: 'Valley of the Lilies — The everyday, made right.',
+    description: 'Real materials. Non-toxic formulas. Made in America.',
+    creator: '@valleylilies',
     images: ['/og-image.svg'],
   },
   robots: { index: true, follow: true },

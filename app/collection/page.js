@@ -5,7 +5,7 @@ import Footer from '../../components/Footer'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Browse Collection | PARED',
+  title: 'Shop | Valley of the Lilies',
   description: 'Browse our curated collection of non-toxic, natural-material goods for women. Every product is vetted for quality, materials, and origin.',
 }
 
@@ -18,8 +18,8 @@ export default function CollectionPage() {
         <div className="disclosure-bar">
           <p>
             <strong>Affiliate Disclosure:</strong>{' '}
-            PARED may earn a commission from qualifying purchases made through our links, at no additional cost to you.
-            All products are independently curated. <Link href="/disclaimer" style={{ color: 'var(--pared-accent)', borderBottom: '1px solid rgba(196,131,106,0.3)' }}>Full disclosure.</Link>
+            Valley of the Lilies may earn a commission from qualifying purchases made through our links, at no additional cost to you.
+            All products are independently curated. <Link href="/disclaimer" style={{ color: 'var(--votl-accent)', borderBottom: '1px solid rgba(196,131,106,0.3)' }}>Full disclosure.</Link>
           </p>
         </div>
 
